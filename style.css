@@ -1,5 +1,5 @@
-        /* style for the side Navigation */
-        .sidenav {
+      /* style for the side Navigation */
+        header {
             height:100%;
             width:200px;
             position: fixed;
@@ -9,7 +9,21 @@
             padding-top: 20px;
 
          }
-.sidenav ul li a:hover {
+         nav ul{
+            list-style-type: none;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: space-evenly;
+            position: fixed;
+            width: 100%;
+         }
+
+nav ul l a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
 background-color: #ddd;
 }
 /* Style for Content Area */
@@ -18,7 +32,7 @@ margin-left: 200px; /*Same as sidenav width */
 }
 
 .content {
-pading: 20px;
+padding: 20px;
 } 
 /* Responsive Styles */ 
 @media only screen and (max-width: 600px) {
@@ -30,12 +44,39 @@ width: 100%;
 height: auto;
 position:relative;
 }
+/*Style for Home Style */
+#home {
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#home img {
+    width: 20px;
+    height: 40vh;
+}
+#home p{
+    font-size: larger;
+}
+
 }
 /* Styles for Ingredients Section */
 #ingredients {
 text-align: center;
+font-style: italic; font-size: larger;
 padding: 20px;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 }
+
 
 #ingredients  ul {
 display: flex;
@@ -56,6 +97,12 @@ height: auto;
 #recipe {
 text-align: center;
 padding: 20px;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+font-size: larger;
 }
 #recipe ol {
 text-align: left;
@@ -72,6 +119,7 @@ height: auto;
 #feedback {
 text-align: center;
 padding: 20px;
+height: 70vh;
 }
 #feedback form{
 display: flex;
